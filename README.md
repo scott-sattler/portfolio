@@ -1,4 +1,4 @@
 # githubportfolio
 
-foo bar r
+foo bar
 
