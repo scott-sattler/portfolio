@@ -12,3 +12,7 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+$(function () {
+    $("#includedContent").load("imported.html");
+});
