@@ -50,7 +50,7 @@ p.subheading {
     margin-left: 20px;
     margin-right: 20px;
     outline: none;
-    font-size: 16px;
+    font-size: 18px;
     /* This text is in Monaco */
     font-family: monaco, Consolas, Lucida Console, monospace;
     /*font-weight: 700;*/
@@ -69,27 +69,34 @@ p.subheading {
     width: 80%;
     /* This text is in Monaco */
     font-family: monaco, Consolas, Lucida Console, monospace;
-/*    font-weight: 700;*/
+    /*    font-weight: 700;*/
 
     margin-left: 20px;
     margin-right: 20px;
     margin-top: -10px;
-
     text-indent: 40px;
-
-/*    text-indent: 15px;*/
+    /*    text-indent: 15px;*/
 }
 
 
 .collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 16px;
-    color: red;
     float: left;
-    /*margin-left: -15px;*/
 
+    /* Unicode text shadow hack */
+    color: transparent;
+    text-shadow: 0 0 0 black;
 }
 
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.link {
+    color: #004d00;
+}
+
+a:link {
+    text-decoration: none;
 }
