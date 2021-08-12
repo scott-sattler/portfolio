@@ -37,6 +37,11 @@ p.subheading {
     margin-top: 0em;
 }
 
+p:first-line {
+    color: red;
+    text-indent: -2em;
+}
+
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #808080;
@@ -46,7 +51,7 @@ p.subheading {
     width: 80%;
     border: none;
     text-align: left;
-    text-indent: 15px;
+/*    text-indent: 15px;*/
     margin-left: 20px;
     margin-right: 20px;
     outline: none;
@@ -54,6 +59,10 @@ p.subheading {
     /* This text is in Monaco */
     font-family: monaco, Consolas, Lucida Console, monospace;
     /*font-weight: 700;*/
+}
+
+.collapsible::first-line {
+    text-indent: -2em;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -74,7 +83,24 @@ p.subheading {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: -10px;
-    text-indent: 40px;
+/*    text-indent: -1em;*/
+    /*    text-indent: 15px;*/
+}
+
+.code {
+    padding: 0;
+    display: none;
+    overflow: hidden;
+    background-color: #808080;
+    width: 80%;
+    /* This text is in Monaco */
+    font-family: monaco, Consolas, Lucida Console, monospace;
+    /*    font-weight: 700;*/
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -10px;
+/*    text-indent: 40px;*/
     /*    text-indent: 15px;*/
 }
 
