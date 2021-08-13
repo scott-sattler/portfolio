@@ -4,7 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 
+    <!--<script type="text/javascript"
+            src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+    </script>-->
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
 </head>
@@ -41,19 +46,30 @@
     <p style="margin-top:1cm;"></p>
 
     <button type="button" class="collapsible">A* Implementation in Unity</button>
-    <div class="content">
-        <p>
-            Replace this text. text text text text text text text text text text text text text text text text text text text text text text text text text text text text
-        </p>
-        <p>
-            <a class="link" href="https://github.com/octocat-placeholder">view source</a>
-        </p>
+    <div class="contentcontainer">
+        <div class="textcontainer">
+            <p class="dropdowntext">
+                Replace this text. text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                <br />
+                <a class="link" href="https://github.com/octocat-placeholder">view source</a>
+            </p>
+
+            <!--<div class="content">
+                <p class="dropdowntext">
+                    Replace this text. text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                    <br />
+                    <a class="link" href="https://github.com/octocat-placeholder">view source</a>
+                </p>
+            </div>-->
+        </div>
+
+
     </div>
 
     <p></p>
 
     <button type="button" class="collapsible">HackerRank Solutions in C#</button>
-    <div class="content">
+    <div class="contentcontainer">
         <p>
             Coding examples?
         </p>
@@ -65,18 +81,56 @@
     <p></p>
 
     <button type="button" class="collapsible">Statistical Analysis using R</button>
-    <div class="content">
+    <div class="contentcontainer"> <!--<div class="contentblack">-->
+        <div class="textcontainer" style="background-color: #f2f2f2">
+            <div class="dropdowntext">
 
-        <p>
-            Derived conditional complementary cumulative distribution function with the following constraints:
 
 
-        </p>
+                <p style="color: black;">
+                    To improve a calculation where normal (Gaussian) distributions were typically used, I derived the following conditional CCDF (conditional complementary cumulative distribution function):
 
-        <p>
+                </p>
 
-        </p>
+                <!--<p>
+        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+        \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+    </p>-->
 
+                <p>
+                    <!--<img src="https://raw.githubusercontent.com/octocat-placeholder/portfolio/master/githubportfolio/fulleqdarklp.gif" alt="foo" class="centerimg" />--> <!--style="width: 65%; " -->
+                    <img src="https://raw.githubusercontent.com/octocat-placeholder/portfolio/master/githubportfolio/fulleqlightlp.gif" alt="foo" class="centerimg" style="min-width: 400px; max-width: 500px;" /> <!--style="width: 65%; " -->
+
+                </p>
+
+                <p style="color: black;">
+                    Given the circumstances of the calculation, the following constraints were imposed:
+                </p>
+
+                <!--<img src="https://raw.githubusercontent.com/octocat-placeholder/portfolio/master/githubportfolio/constraintsdarklp.gif" alt="foo" class="centerimg" />--> <!--style="max-width: 90%; min-width: 700px; "-->
+                <img src="https://raw.githubusercontent.com/octocat-placeholder/portfolio/master/githubportfolio/constraintslightlp.gif" alt="foo" class="centerimg" width="650" style="min-width: 650px;" /> <!--style="max-width: 90%; min-width: 700px; "-->
+
+
+                <p style="color: black;">
+                    And to improve clarity, R was used to plot the results of the study.
+                </p>
+
+                <p>
+                    <!--<img src="https://raw.githubusercontent.com/octocat-placeholder/portfolio/master/githubportfolio/plotdark.png" alt="description" class="centerimg" />-->
+                    <img src="https://raw.githubusercontent.com/octocat-placeholder/portfolio/master/githubportfolio/plotlight.png" alt="description" class="centerimg" style="min-width: 597px; border: 5px;border-left-width: 5px;border-left-style: solid;border-top-width: 5px;border-top-style: solid;border-right-width: 5px;border-right-style: solid;border-bottom-width: 5px;border-bottom-style: solid;" />
+
+                </p>
+
+                <p style="color: black;">
+                    These black step functions were generated from exact admissible two-sided intervals. The algorithm used Weizhen Wang's published work from 2015 (110 Journal of the American Statistical Association 1491). The grey underlaid step functions are hypergeometric quantile (inverse CDF) functions of the same parameters.
+                </p>
+
+                <!--<p style="text-align: center; margin-top: -1em">
+    Best viewed in "Light Mode". (add toggle)
+    </p>-->
+
+            </div>
+        </div>
     </div>
 
     <!-- links to Java scripts (order dependent) -->
@@ -84,7 +138,6 @@
 
     <p></p>
 
-    <img src="https://raw.githubusercontent.com/octocat-placeholder/portfolio/master/githubportfolio/used%20plot.png" alt="description" width="460" height="305" />
 
 </body>
 </html> 
