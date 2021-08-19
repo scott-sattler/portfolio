@@ -8,8 +8,8 @@
             src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
     </script>-->
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!--<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>-->
 
 
 </head>
@@ -49,18 +49,12 @@
     <div class="contentcontainer">
         <div class="textcontainer">
             <p class="dropdowntext">
-                Replace this text. text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+                Replace this text. text text text text text text text text text text text text text 
+                text text text text text text text text text text text text text text text
                 <br />
                 <a class="link" href="https://github.com/octocat-placeholder">view source</a>
             </p>
 
-            <!--<div class="content">
-                <p class="dropdowntext">
-                    Replace this text. text text text text text text text text text text text text text text text text text text text text text text text text text text text text
-                    <br />
-                    <a class="link" href="https://github.com/octocat-placeholder">view source</a>
-                </p>
-            </div>-->
         </div>
 
 
@@ -71,7 +65,40 @@
     <button type="button" class="collapsible">HackerRank Solutions in C#</button>
     <div class="contentcontainer">
         <p>
-            Coding examples?
+            use better example
+        </p>
+        <p>
+            Starting with a 1-indexed array of zeros and a list of operations, for each operation
+            add a value to each the array element between two given indices, inclusive. Once all
+            operations have been performed, return the maximum value in the array.
+        </p>
+        <p>
+            <!-- HTML generated using hilite.me --> <!-- with modifications -->
+            <div style="background: #4d4d4d; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;padding-left: 0px;padding-right: 0px;border-left-width: 5px;border-right-width: 5px;padding-top: 5px;padding-bottom: 5px;">
+                <pre style="margin: 0; line-height: 125%">        <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">long</span> <span style="color: #a6e22e">ArrayManipulation</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n,</span> <span style="color: #66d9ef">int</span><span style="color: #f8f8f2">[][]</span> <span style="color: #f8f8f2">queries)</span>
+                <span style="color: #f8f8f2;padding-left: -5px;margin-left: -65px;">{</span>
+                <span style="color: #66d9ef">long</span><span style="color: #f8f8f2">[]</span> <span style="color: #f8f8f2">manipulated_array</span> <span style="color: #f8f8f2">=</span> <span style="color: #66d9ef">new</span> <span style="color: #66d9ef">long</span><span style="color: #f8f8f2">[n</span> <span style="color: #f8f8f2">+</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">];</span>
+                <span style="color: #66d9ef">long</span> <span style="color: #f8f8f2">sum</span> <span style="color: #f8f8f2">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+                <span style="color: #66d9ef">long</span> <span style="color: #f8f8f2">maximum_value</span> <span style="color: #f8f8f2">=</span> <span style="color: #f8f8f2">-</span><span style="color: #66d9ef">long</span><span style="color: #f8f8f2">.MaxValue;</span>
+
+                <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f8f8f2">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f8f8f2">&lt;</span> <span style="color: #f8f8f2">queries.Length;</span> <span style="color: #f8f8f2">i++)</span>
+                <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2;margin-left: 65px;">manipulated_array[queries[i][</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #f8f8f2">-</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f8f8f2">+=</span> <span style="color: #f8f8f2">queries[i][</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">];</span>
+                <span style="color: #f8f8f2;margin-left: 65px;">manipulated_array[queries[i][</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]]</span> <span style="color: #f8f8f2">+=</span> <span style="color: #f8f8f2">-queries[i][</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">];</span>
+                <span style="color: #f8f8f2">}</span>
+
+                <span style="color: #66d9ef">foreach</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">long</span> <span style="color: #f8f8f2">element</span> <span style="color: #66d9ef">in</span> <span style="color: #f8f8f2">manipulated_array)</span>
+                <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2;margin-left: 65px;">sum</span> <span style="color: #f8f8f2">+=</span> <span style="color: #f8f8f2">element;</span>
+                <span style="color: #66d9ef;margin-left: 65px;">if</span> <span style="color: #f8f8f2">(sum</span> <span style="color: #f8f8f2">&gt;</span> <span style="color: #f8f8f2">maximum_value)</span>
+                <span style="color: #f8f8f2;margin-left: 65px;">maximum_value</span> <span style="color: #f8f8f2">=</span> <span style="color: #f8f8f2">sum;</span>
+                <span style="color: #f8f8f2">}</span>
+
+                <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">maximum_value;</span>
+                <span style="color: #f8f8f2;margin-left: -65px;">}</span>
+                </pre>
+            </div>
+
         </p>
         <p>
             https://www.hackerrank.com/USER
@@ -85,17 +112,10 @@
         <div class="textcontainer" style="background-color: #f2f2f2">
             <div class="dropdowntext">
 
-
-
                 <p style="color: black;">
                     To improve a calculation where normal (Gaussian) distributions were typically used, I derived the following conditional CCDF (conditional complementary cumulative distribution function):
 
                 </p>
-
-                <!--<p>
-        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-        \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
-    </p>-->
 
                 <p>
                     <!--<img src="https://raw.githubusercontent.com/octocat-placeholder/portfolio/master/githubportfolio/fulleqdarklp.gif" alt="foo" class="centerimg" />--> <!--style="width: 65%; " -->
@@ -122,12 +142,9 @@
                 </p>
 
                 <p style="color: black;">
-                    These black step functions were generated from exact admissible two-sided intervals. The algorithm used Weizhen Wang's published work from 2015 (110 Journal of the American Statistical Association 1491). The grey underlaid step functions are hypergeometric quantile (inverse CDF) functions of the same parameters.
+                    The black step functions were generated from exact admissible two-sided intervals. This calculation used Weizhen Wang's work published in the Journal of the American Statistical Association (2015, vol. 110, p. 1491). The grey underlaid step functions are hypergeometric quantile (inverse CDF) functions of the same parameters.
                 </p>
 
-                <!--<p style="text-align: center; margin-top: -1em">
-    Best viewed in "Light Mode". (add toggle)
-    </p>-->
 
             </div>
         </div>
