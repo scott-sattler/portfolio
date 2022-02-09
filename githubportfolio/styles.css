@@ -149,13 +149,18 @@ p.subheading {
 }
 
 /* Modifies default link color */
-.link {
+/*.link {
     color: #004d00;
-}
+}*/
 
 /* Modifies default link style - removes underline */
-a:link {
+/*a:link {
     text-decoration: none;
+}*/
+
+a, a:visited {
+    text-decoration: none;
+    color: lightgray;
 }
 
 /* Used to center images */
