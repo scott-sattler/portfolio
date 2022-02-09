@@ -1,5 +1,3 @@
-# portfolio README
-
-Write this.
+# README
 
 Contents within "githubportfolio" directory.
