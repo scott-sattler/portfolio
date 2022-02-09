@@ -2,4 +2,4 @@
 
 Contents within "githubportfolio" directory.
 
-Written with Visual Studio 2019.
+Written in Visual Studio 2019.
