@@ -1,4 +1,5 @@
-# portfolio README
+# README
 
-Write this.
+Contents within "githubportfolio" directory.
 
+Written in Visual Studio 2019.
