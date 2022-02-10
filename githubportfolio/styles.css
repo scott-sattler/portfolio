@@ -1,4 +1,6 @@
-﻿/* Body color */
+﻿/* styles not updating in FF: https://stackoverflow.com/a/43063755 */
+
+/* Body color */
 body {
     background-color: #262626;
     /* This text is in Monaco */
