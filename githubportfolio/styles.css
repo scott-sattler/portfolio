@@ -23,6 +23,14 @@ h1 {
     margin-bottom: -.6em;
 }*/
 
+h1.custom {
+    color: lightgrey;
+    text-align: center;
+    font-size: 32px;
+    margin-top: -.2em;
+    margin-bottom: -.6em;
+}
+
 /* Paragraph color */
 p {
     color: lightgrey;
@@ -177,4 +185,10 @@ a, a:visited {
     min-width: 500px;
 /*    min-height: 60%;*/
     /*    width: 60%;*/
+}
+
+.subtitle {
+    /*margin-left: 20%;*/
+    /*    font-size: 300%;*/
+    /*font-size: xx-large;*/
 }
