@@ -50,6 +50,11 @@ img {
         min-width: 500px;
     }
 
+    img.full {
+        width: 100%;
+        height: 100%;
+    }
+
 .content {
     margin: 20px;
     margin-bottom: 5px;
@@ -156,10 +161,10 @@ a, a:visited {
     color: lightgray; /* Modifies default link color */
 }
 
-.text {
+.unorderedlist {
     color: lightgray;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: -2em;
+    margin-bottom: -1em;
     list-style-type: square;
 }
 
