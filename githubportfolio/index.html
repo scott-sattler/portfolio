@@ -2,6 +2,12 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
     <link rel="stylesheet" href="styles.css">
     <script async src="script.js"></script>  <!-- links to Java scripts (order dependent) -->
 </head>
@@ -50,22 +56,63 @@
         <!-- Projects -->
         <br />
 
+        <button type="button" class="collapsible">Sudoku Solver (Python, Tkinter, Search)</button>
+        <div class="contentcontainer">
+            <div class="textcontainer">
+                <p class="dropdowntext">
+                    <div class="row">
+                        <br />
+                        <img class="sudoku" src="https://github.com/scott-sattler/sudoku-solver/blob/58a964767b7cfa62e57f8bbf8a735fd21e658af4/screenshots/readme_image_1.png?raw=true" alt="">
+                        <img class="sudoku" src="https://github.com/scott-sattler/sudoku-solver/blob/bad2818cfa2013f85590909518c9cade73421963/screenshots/readme_image_2.png?raw=true" alt="">
+                        <img class="sudoku" src="https://github.com/scott-sattler/sudoku-solver/blob/58a964767b7cfa62e57f8bbf8a735fd21e658af4/screenshots/readme_image_3.png?raw=true" alt="">
+                        <br />
+                    </div>
+                    <a class="link" href="https://github.com/scott-sattler/sudoku-solver">view source</a>
+                    <br />
+                    <a class="link" href="https://github.com/scott-sattler/sudoku-solver/releases">download app</a>
+                </p>
+
+            </div>
+        </div>
+
+        <p></p>
+
         <button type="button" class="collapsible">Data Structures and Algorithms (Python, C#, C++)</button>
         <div class="contentcontainer">
             <div class="textcontainer">
                 <p class="dropdowntext">
                     <br />
-                    // TODO: add example; add C# & C++
-                    <br />
-                    <br />
-                    <a class="link" href="https://github.com/scott-sattler/DSA-python">github directory</a>
+                    <pre>
+                    <code class="python">
+"""
+Given an integer array nums and an integer k, return the k most frequent elements, in any order.
+"""
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        # create frequency map
+        freq_m = dict()
+        for num in nums:
+            freq_m[num] = 1 + freq_m.get(num, 0)
+
+        # heapify for k O(log2 n) pops
+        import heapq
+        freq_list = [(-v, k) for k, v in list(freq_m.items())]
+        heapq.heapify(freq_list)  # O(n) < O(k log2 n)
+
+        # pop k times for O(k log2 n) complexity
+        top_k = list()
+        for _ in range(k):
+            top_k.append(heapq.heappop(freq_list))
+
+        return [k for v, k in top_k]  # return only relevant data
+                        </code>
+                    </pre>
+                    <a class="link" href="https://github.com/scott-sattler/coachable/tree/main/LC%20Mock">live solutions</a>
                     <br />
                     <br />
                     <a class="link" href="https://leetcode.com/scott_sattler/">https://leetcode.com/scott_sattler/</a>
                     <br />
-                    <a class="link" href="https://www.hackerrank.com/Scott_Sattler">https://www.hackerrank.com/Scott_Sattler</a>
-                    <br />
-                    <a class="link" href="">// TODO: add other</a>
                 </p>
             </div>
         </div>
@@ -140,23 +187,6 @@
                     <a class="link" href="https://github.com/scott-sattler/unity-project/blob/main/AStarGrid.cs">view source</a>
                     <br />
                     <a class="link" href="https://github.com/scott-sattler/unity-project/releases">download pre-alpha (unzip then run .exe)</a>
-                </p>
-
-            </div>
-        </div>
-
-        <p></p>
-
-        <button type="button" class="collapsible">Sudoku Solver (Python, Tkinter, Search)</button>
-        <div class="contentcontainer">
-            <div class="textcontainer">
-                <p class="dropdowntext">
-                    <br />
-                    <img class="full" src="https://github.com/scott-sattler/sudoku-solver/raw/main/sudoku_solver_screenshot.png?raw=true" alt="">
-                    <br />
-                    <a class="link" href="https://github.com/scott-sattler/sudoku-solver">view source</a>
-                    <br />
-                    <a class="link" href="https://github.com/scott-sattler/sudoku-solver/releases">download app</a>
                 </p>
 
             </div>

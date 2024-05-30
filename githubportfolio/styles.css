@@ -63,6 +63,11 @@ img {
         height: 100%;
     }
 
+    img.sudoku {
+        height: 33%;
+        width: 33%;
+    }
+
 .top-content {
     margin-left: 20px;
     /*margin-bottom: 5px;*/
@@ -127,6 +132,7 @@ img {
     /*padding: 10px;*/
     padding-right: 10px;
     padding-left: 10px;
+    max-height: 100px:
 }
 
 .contentblack {
@@ -191,4 +197,18 @@ a, a:visited {
     text-align: center;
     font-weight: bolder;
     display: block
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+
+.hljs {
+    background: #323232;
 }
