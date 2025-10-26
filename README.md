@@ -1,6 +1,6 @@
 # README
 
-https://scott-sattler.github.io/webpage/
+https://scott-sattler.github.io/portfolio/
 
 ~~Contents within "githubportfolio" directory.~~
 
